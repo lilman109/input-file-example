@@ -14,7 +14,6 @@ function App() {
   const addImage = useCallback(
     async (e: ChangeEvent<HTMLInputElement>) => {
       if (!e.target.files || !e.target.files.length) {
-        setFilePreviews([]);
         return;
       }
       const file = e.target.files[0];
